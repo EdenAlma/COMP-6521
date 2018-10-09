@@ -56,7 +56,6 @@ public class RunMaker {
 			
 			Arrays.sort(data);  //sort data 
 			phaseOneRuns[i] = new Run(data, Integer.toString(i)); //create run, passing integer array to constructor
-			data = null;  //clear integer array for memory saving purposes (it is saved in run object/file)
 			System.gc();  //call garbage collector 
 			index = 0; //re-initialize index
 		
